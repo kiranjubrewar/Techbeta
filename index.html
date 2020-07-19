@@ -1,0 +1,1444 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Startup</title>
+
+<!--  -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/css/bootstrap.min.css"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,400i,500,700">
+        <style>
+            /* This css file is to over write bootstarp css
+---------------------------------------------------------------------- */
+
+
+/*
+Theme Name: Modern - Bootstrap 4 Cards
+Theme URI: http://adamthemes.com/
+Author: AdamThemes
+Author URI: http://adamthemes.com/
+Description: Modern - Bootstrap 4 Cards by AdamThemes
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: card, cards, css3, modern, adamthemes, bootstrap, profile
+*---------------------------------------------------------------------- */
+
+
+/*---------------------------------------------------------------------- 
+TABLE OF CONTENTS
+
+// 1. SECTIONS
+// 2. CARDS
+//      2.1 Card Table 
+//      2.1 Card Blog 
+//      2.1 Card Background 
+//      2.1 Card Profile 
+//      2.1 Card Category 
+//      2.1 Card Author 
+//      2.1 Card Product
+//      2.1 Card Testimonial
+//      2.1 Text Color
+// 3. BUTTONS
+// 4. SOCIAL MEDIA BUTTONS
+// 5. BOOTSTRAP COL-MD-12 CLASS
+// 6. FONT AWESOME FA CLASS
+
+------------------------------------------------------------------------*/
+
+
+/*---------------------------------------------------------------------- /
+SECTIONS
+----------------------------------------------------------------------- */
+
+.section-cards {
+    z-index: 3;
+    position: relative;
+}
+
+.section-gray {
+    background: #E5E5E5;
+    padding: 60px 0 30px 0;
+}
+
+
+/*---------------------------------------------------------------------- /
+CARDS
+----------------------------------------------------------------------- */
+
+.card {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    margin-bottom: 30px;
+    border-radius: 6px;
+    color: rgba(0, 0, 0, 0.87);
+    background: #fff;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+
+.card .card-image {
+    height: 60%;
+    position: relative;
+    overflow: hidden;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: -30px;
+    border-radius: 6px;
+    box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+}
+
+.card .card-image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+    pointer-events: none;
+}
+
+.card .card-image .card-caption {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: #fff;
+    font-size: 1.3em;
+    text-shadow: 0 2px 5px rgba(33, 33, 33, 0.5);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.img-raised {
+    box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+}
+
+.card .ftr {
+    margin-top: 15px;
+}
+
+.card .ftr div {
+    display: inline-block;
+}
+
+.card .ftr .author {
+    color: #888;
+}
+
+.card .ftr .stats {
+    float: right;
+    line-height: 30px;
+}
+
+.card .ftr .stats {
+    position: relative;
+    top: 1px;
+    font-size: 14px;
+}
+
+
+/* ============ Card Table ============ */
+
+.table {
+    margin-bottom: 0px;
+}
+
+.card .table {
+    padding: 15px 30px;
+}
+
+.card .table-primary {
+    background: linear-gradient(60deg, #ab47bc, #7b1fa2);
+}
+
+.card .table-info {
+    background: linear-gradient(60deg, #26c6da, #0097a7);
+}
+
+.card .table-success {
+    background: linear-gradient(60deg, #66bb6a, #388e3c);
+}
+
+.card .table-warning {
+    background: linear-gradient(60deg, #ffa726, #f57c00);
+}
+
+.card .table-danger {
+    background: linear-gradient(60deg, #ef5350, #d32f2f);
+}
+
+.card .table-rose {
+    background: linear-gradient(60deg, #ec407a, #c2185b);
+}
+
+.card [class*="table-"] {
+    color: #FFFFFF;
+    border-radius: 6px;
+}
+
+.card [class*="table-"] .card-caption a,
+.card [class*="table-"] .card-caption,
+.card [class*="table-"] .icon i {
+    color: #FFFFFF;
+}
+
+.card [class*="table-"] .icon i {
+    border-color: rgba(255, 255, 255, 0.25);
+}
+
+.card [class*="table-"] .author a,
+.card [class*="table-"] .ftr .stats,
+.card [class*="table-"] .category,
+.card [class*="table-"] .card-description {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.card [class*="table-"] .author a:hover,
+.card [class*="table-"] .author a:focus,
+.card [class*="table-"] .author a:active {
+    color: #FFFFFF;
+}
+
+.card [class*="table-"] h1 small,
+.card [class*="table-"] h2 small,
+.card [class*="table-"] h3 small {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+
+/* ============ Card Blog ============ */
+
+.card-blog {
+    margin-top: 30px;
+}
+
+.card-blog .card-caption {
+    margin-top: 5px;
+}
+
+.card-blog .card-image + .category {
+    margin-top: 20px;
+}
+
+.card-raised {
+    box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+}
+
+
+/* ============ Card Background ============ */
+
+.card-background {
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+}
+
+.card-background .table {
+    position: relative;
+    z-index: 2;
+    min-height: 280px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    max-width: 440px;
+    margin: 0 auto;
+}
+
+.card-background .category,
+.card-background .card-description,
+.card-background small {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.card-background .card-caption {
+    color: #FFFFFF;
+    margin-top: 10px;
+}
+
+.card-background:after {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    display: block;
+    left: 0;
+    top: 0;
+    table: "";
+    background-color: rgba(0, 0, 0, 0.56);
+    border-radius: 6px;
+}
+
+
+/* ============ Card Profile ============ */
+
+.card-profile {
+    margin-top: 30px;
+    text-align: center;
+}
+
+
+/* ============ Card Category ============ */
+
+.category {
+    position: relative;
+    line-height: 0;
+    margin: 15px 0;
+}
+
+.card .category-social .fa {
+    font-size: 24px;
+    position: relative;
+    margin-top: -4px;
+    top: 2px;
+    margin-right: 5px;
+}
+
+
+/* ============ Card Author ============ */
+
+.card .author .avatar {
+    width: 36px;
+    height: 36px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.card .author a {
+    color: #333;
+    text-decoration: none;
+}
+
+.card .author a .ripple-cont {
+    display: none;
+}
+
+
+/* ============ Card Product ============ */
+
+.card-product {
+    margin-top: 30px;
+}
+
+.card-product .btn-simple.btn-just-icon {
+    padding: 0;
+}
+
+.card-product .ftr {
+    margin-top: 5px;
+}
+
+.card-product .ftr .stats {
+    margin-top: 4px;
+    top: 0;
+}
+
+.card-product .ftr h4 {
+    margin-bottom: 0;
+}
+
+.card-product .card-caption,
+.card-product .category,
+.card-product .card-description {
+    text-align: center;
+}
+
+.card-description p {
+    color: #888;
+}
+
+.card-caption,
+.card-caption a {
+    color: #333;
+    text-decoration: none;
+}
+
+.card-caption {
+    font-weight: 700;
+    font-family: "Roboto Slab", "Times New Roman", serif;
+}
+
+
+/* ============ Card Testimonial ============ */
+
+.card-testimonial {
+    margin-top: 0;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.card-profile .btn-just-icon.btn-raised,
+.card-testimonial .btn-just-icon.btn-raised {
+    margin-left: 6px;
+    margin-right: 6px;
+}
+
+.card-profile .card-avatar,
+.card-testimonial .card-avatar {
+    max-width: 130px;
+    max-height: 130px;
+    margin: -50px auto 0;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+}
+
+.card-profile.card-plain .card-avatar,
+.card-testimonial.card-plain .card-avatar {
+    margin-top: 0;
+}
+
+.card-testimonial .card-avatar {
+    max-width: 100px;
+    max-height: 100px;
+}
+
+.card-testimonial .card-description {
+    font-style: italic;
+}
+
+.card-testimonial .card-description + .card-caption {
+    margin-top: 30px;
+}
+
+.card-testimonial .icon {
+    margin-top: 30px;
+}
+
+.card-testimonial .icon {
+    font-size: 40px;
+}
+
+.card-testimonial .ftr {
+    margin-top: 0;
+}
+
+.card-testimonial .ftr .card-avatar {
+    margin-top: 10px;
+    margin-bottom: -50px;
+}
+
+
+/* ============ Text Color ============ */
+
+.text-warning {
+    color: #ff9800;
+}
+
+.text-primary {
+    color: #9c27b0;
+}
+
+.text-danger {
+    color: #f44336;
+}
+
+.text-success {
+    color: #4caf50;
+}
+
+.text-info {
+    color: #00bcd4;
+}
+
+.text-rose {
+    color: #e91e63;
+}
+
+.text-gray {
+    color: #888;
+}
+
+
+/*---------------------------------------------------------------------- /
+BUTTONS
+----------------------------------------------------------------------- */
+
+.btn {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.btn,
+.navbar .navbar-nav > li > a.btn {
+    border: none;
+    border-radius: 3px;
+    position: relative;
+    padding: 12px 30px;
+    margin: 10px 1px;
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0;
+    will-change: box-shadow, transform;
+    transition: box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1), background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn:focus,
+.btn:active,
+.btn:active:focus {
+    outline: 0;
+}
+
+.btn.btn-round,
+.navbar .navbar-nav > li > a.btn.btn-round {
+    border-radius: 30px;
+}
+
+.btn.btn-just-icon,
+.navbar .navbar-nav > li > a.btn.btn-just-icon {
+    font-size: 20px;
+    padding: 12px 12px;
+    line-height: 1em;
+}
+
+.btn.btn-just-icon i,
+.navbar .navbar-nav > li > a.btn.btn-just-icon i {
+    width: 20px;
+}
+
+
+/* Button Info */
+
+.btn.btn-info {
+    background-color: #00bcd4;
+    color: #FFFFFF;
+}
+
+.btn.btn-info:focus,
+.btn.btn-info:active,
+.btn.btn-info:hover {
+    box-shadow: 0 14px 26px -12px rgba(0, 188, 212, 0.42), 0 4px 23px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 188, 212, 0.2);
+}
+
+
+/* Button Danger */
+
+.btn.btn-danger {
+    background-color: #f44336;
+    color: #FFFFFF;
+}
+
+.btn.btn-danger:focus,
+.btn.btn-danger:active,
+.btn.btn-danger:hover {
+    box-shadow: 0 14px 26px -12px rgba(244, 67, 54, 0.42), 0 4px 23px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(244, 67, 54, 0.2);
+}
+
+
+/* Button Warning */
+
+.btn.btn-warning.btn-simple:hover,
+.btn.btn-warning.btn-simple:focus,
+.btn.btn-warning.btn-simple:active {
+    background-color: transparent;
+    color: #ff9800;
+}
+
+.btn.btn-warning.btn-simple,
+.navbar .navbar-nav > li > a.btn.btn-warning.btn-simple {
+    background-color: transparent;
+    color: #ff9800;
+    box-shadow: none;
+}
+
+.btn.btn-warning,
+.navbar .navbar-nav > li > a.btn.btn-warning {
+    box-shadow: 0 2px 2px 0 rgba(255, 152, 0, 0.14), 0 3px 1px -2px rgba(255, 152, 0, 0.2), 0 1px 5px 0 rgba(255, 152, 0, 0.12);
+}
+
+
+/* Button Rose */
+
+.btn.btn-rose.btn-simple:hover,
+.btn.btn-rose.btn-simple:focus,
+.btn.btn-rose.btn-simple:active {
+    background-color: transparent;
+    color: #e91e63;
+}
+
+.btn.btn-rose.btn-simple,
+.navbar .navbar-nav > li > a.btn.btn-rose.btn-simple {
+    background-color: transparent;
+    color: #e91e63;
+    box-shadow: none;
+}
+
+
+/* Button White */
+
+.btn.btn-white,
+.btn.btn-white:focus,
+.btn.btn-white:hover {
+    background-color: #FFFFFF;
+    color: #888;
+}
+
+.btn.btn-white.btn-simple,
+.navbar .navbar-nav > li > a.btn.btn-white.btn-simple {
+    color: #FFFFFF;
+    background: transparent;
+    box-shadow: none;
+}
+
+
+/*---------------------------------------------------------------------- /
+SOCIAL MEDIA BUTTONS
+----------------------------------------------------------------------- */
+
+
+/* facebook */
+
+.btn.btn-facebook,
+.navbar .navbar-nav > li > a.btn.btn-facebook {
+    background-color: #3b5998;
+    color: #fff;
+    box-shadow: 0 2px 2px 0 rgba(59, 89, 152, 0.14), 0 3px 1px -2px rgba(59, 89, 152, 0.2), 0 1px 5px 0 rgba(59, 89, 152, 0.12);
+}
+
+.btn.btn-facebook:focus,
+.btn.btn-facebook:active,
+.btn.btn-facebook:hover {
+    background-color: #3b5998;
+    color: #fff;
+    box-shadow: 0 14px 26px -12px rgba(59, 89, 152, 0.42), 0 4px 23px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(59, 89, 152, 0.2);
+}
+
+.btn.btn-facebook.btn-simple,
+.navbar .navbar-nav > li > a.btn.btn-facebook.btn-simple {
+    color: #3b5998;
+    background-color: transparent;
+    box-shadow: none;
+}
+
+
+/*twitter*/
+
+.btn.btn-twitter,
+.navbar .navbar-nav > li > a.btn.btn-twitter {
+    background-color: #55acee;
+    color: #fff;
+    box-shadow: 0 2px 2px 0 rgba(85, 172, 238, 0.14), 0 3px 1px -2px rgba(85, 172, 238, 0.2), 0 1px 5px 0 rgba(85, 172, 238, 0.12);
+}
+
+.btn.btn-twitter:focus,
+.btn.btn-twitter:active,
+.btn.btn-twitter:hover {
+    background-color: #55acee;
+    color: #fff;
+    box-shadow: 0 14px 26px -12px rgba(85, 172, 238, 0.42), 0 4px 23px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(85, 172, 238, 0.2);
+}
+
+.btn.btn-twitter.btn-simple,
+.navbar .navbar-nav > li > a.btn.btn-twitter.btn-simple {
+    color: #55acee;
+    background-color: transparent;
+    box-shadow: none;
+}
+
+
+/*pinterest*/
+
+.btn.btn-pinterest,
+.navbar .navbar-nav > li > a.btn.btn-pinterest {
+    background-color: #cc2127;
+    color: #fff;
+    box-shadow: 0 2px 2px 0 rgba(204, 33, 39, 0.14), 0 3px 1px -2px rgba(204, 33, 39, 0.2), 0 1px 5px 0 rgba(204, 33, 39, 0.12);
+}
+
+.btn.btn-pinterest:focus,
+.btn.btn-pinterest:active,
+.btn.btn-pinterest:hover {
+    background-color: #cc2127;
+    color: #fff;
+    box-shadow: 0 14px 26px -12px rgba(204, 33, 39, 0.42), 0 4px 23px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(204, 33, 39, 0.2);
+}
+
+.btn.btn-pinterest.btn-simple,
+.navbar .navbar-nav > li > a.btn.btn-pinterest.btn-simple {
+    color: #cc2127;
+    background-color: transparent;
+    box-shadow: none;
+}
+
+
+/*google*/
+
+.btn.btn-google,
+.navbar .navbar-nav > li > a.btn.btn-google {
+    background-color: #dd4b39;
+    color: #fff;
+    box-shadow: 0 2px 2px 0 rgba(221, 75, 57, 0.14), 0 3px 1px -2px rgba(221, 75, 57, 0.2), 0 1px 5px 0 rgba(221, 75, 57, 0.12);
+}
+
+.btn.btn-google:focus,
+.btn.btn-google:active,
+.btn.btn-google:hover {
+    background-color: #dd4b39;
+    color: #fff;
+    box-shadow: 0 14px 26px -12px rgba(221, 75, 57, 0.42), 0 4px 23px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(221, 75, 57, 0.2);
+}
+
+.btn.btn-google.btn-simple,
+.navbar .navbar-nav > li > a.btn.btn-google.btn-simple {
+    color: #dd4b39;
+    background-color: transparent;
+    box-shadow: none;
+}
+
+
+/*dribbble*/
+
+.btn.btn-dribbble,
+.navbar .navbar-nav > li > a.btn.btn-dribbble {
+    background-color: #ea4c89;
+    color: #fff;
+    box-shadow: 0 2px 2px 0 rgba(234, 76, 137, 0.14), 0 3px 1px -2px rgba(234, 76, 137, 0.2), 0 1px 5px 0 rgba(234, 76, 137, 0.12);
+}
+
+.btn.btn-dribbble:focus,
+.btn.btn-dribbble:active,
+.btn.btn-dribbble:hover {
+    background-color: #ea4c89;
+    color: #fff;
+    box-shadow: 0 14px 26px -12px rgba(234, 76, 137, 0.42), 0 4px 23px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(234, 76, 137, 0.2);
+}
+
+.btn.btn-dribbble.btn-simple,
+.navbar .navbar-nav > li > a.btn.btn-dribbble.btn-simple {
+    color: #ea4c89;
+    background-color: transparent;
+    box-shadow: none;
+}
+
+
+/*instagram*/
+
+.btn.btn-instagram,
+.navbar .navbar-nav > li > a.btn.btn-instagram {
+    background-color: #125688;
+    color: #fff;
+    box-shadow: 0 2px 2px 0 rgba(18, 86, 136, 0.14), 0 3px 1px -2px rgba(18, 86, 136, 0.2), 0 1px 5px 0 rgba(18, 86, 136, 0.12);
+}
+
+.btn.btn-instagram:focus,
+.btn.btn-instagram:active,
+.btn.btn-instagram:hover {
+    background-color: #125688;
+    color: #fff;
+    box-shadow: 0 14px 26px -12px rgba(18, 86, 136, 0.42), 0 4px 23px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(18, 86, 136, 0.2);
+}
+
+.btn.btn-instagram.btn-simple,
+.navbar .navbar-nav > li > a.btn.btn-instagram.btn-simple {
+    color: #125688;
+    background-color: transparent;
+    box-shadow: none;
+}
+
+
+/*---------------------------------------------------------------------- /
+BOOTSTRAP COL-MD-12 CLASS
+----------------------------------------------------------------------- */
+
+.col-md-12 {
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+
+/*---------------------------------------------------------------------- /
+FONT AWESOME FA CLASS
+----------------------------------------------------------------------- */
+
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/***********Only4Demo*******************/
+/**************************************/
+
+/* ======= GENERAL  ======= */
+
+body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4 {
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 300;
+    line-height: 1.5em;
+}
+
+a {
+    color: #9c27b0;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #9c27b0;
+    text-decoration: underline;
+}
+
+p {
+    color: #3C4857;
+}
+
+
+
+
+h1, .h1 {
+  font-size: 3.8em;
+}
+
+h2, .h2 {
+  font-size: 2.0em;
+  line-height: 1.6em;
+  margin: 15px 0 15px;
+  font-weight: 700;
+  font-family: "Roboto Slab", "Times New Roman", serif;
+  text-align: center;
+}
+
+h3, .h3 {
+  font-size: 1.825em;
+  line-height: 1.4em;
+  margin: 30px 0 30px;
+  font-weight: 700;
+  font-family: "Roboto Slab", "Times New Roman", serif;
+  text-align: center;
+}
+
+h4, .h4 {
+  font-size: 1.3em;
+  line-height: 1.55em;
+}
+
+h5, .h5 {
+  font-size: 1.25em;
+  line-height: 1.55em;
+  margin-bottom: 15px;
+}
+
+h6, .h6 {
+  font-size: 0.9em;
+  font-weight: 500;
+}
+        </style>
+        <script>
+            (function ($) {
+                $.fn.countTo = function (options) {
+                    options = options || {};
+                    
+                    return $(this).each(function () {
+                        // set options for current element
+                        var settings = $.extend({}, $.fn.countTo.defaults, {
+                            from:            $(this).data('from'),
+                            to:              $(this).data('to'),
+                            speed:           $(this).data('speed'),
+                            refreshInterval: $(this).data('refresh-interval'),
+                            decimals:        $(this).data('decimals')
+                        }, options);
+                        
+                        // how many times to update the value, and how much to increment the value on each update
+                        var loops = Math.ceil(settings.speed / settings.refreshInterval),
+                            increment = (settings.to - settings.from) / loops;
+                        
+                        // references & variables that will change with each update
+                        var self = this,
+                            $self = $(this),
+                            loopCount = 0,
+                            value = settings.from,
+                            data = $self.data('countTo') || {};
+                        
+                        $self.data('countTo', data);
+                        
+                        // if an existing interval can be found, clear it first
+                        if (data.interval) {
+                            clearInterval(data.interval);
+                        }
+                        data.interval = setInterval(updateTimer, settings.refreshInterval);
+                        
+                        // initialize the element with the starting value
+                        render(value);
+                        
+                        function updateTimer() {
+                            value += increment;
+                            loopCount++;
+                            
+                            render(value);
+                            
+                            if (typeof(settings.onUpdate) == 'function') {
+                                settings.onUpdate.call(self, value);
+                            }
+                            
+                            if (loopCount >= loops) {
+                                // remove the interval
+                                $self.removeData('countTo');
+                                clearInterval(data.interval);
+                                value = settings.to;
+                                
+                                if (typeof(settings.onComplete) == 'function') {
+                                    settings.onComplete.call(self, value);
+                                }
+                            }
+                        }
+                        
+                        function render(value) {
+                            var formattedValue = settings.formatter.call(self, value, settings);
+                            $self.html(formattedValue);
+                        }
+                    });
+                };
+                
+                $.fn.countTo.defaults = {
+                    from: 0,               // the number the element should start at
+                    to: 0,                 // the number the element should end at
+                    speed: 1000,           // how long it should take to count between the target numbers
+                    refreshInterval: 100,  // how often the element should be updated
+                    decimals: 0,           // the number of decimal places to show
+                    formatter: formatter,  // handler for formatting the value before rendering
+                    onUpdate: null,        // callback method for every time the element is updated
+                    onComplete: null       // callback method for when the element finishes updating
+                };
+                
+                function formatter(value, settings) {
+                    return value.toFixed(settings.decimals);
+                }
+            }(jQuery));
+            
+            jQuery(function ($) {
+              // custom formatting example
+              $('.count-number').data('countToOptions', {
+                formatter: function (value, options) {
+                  return value.toFixed(options.decimals).replace(/\B(?=(?:\d{3})+(?!\d))/g, ',');
+                }
+              });
+              
+              // start all the timers
+              $('.timer').each(count);  
+              
+              function count(options) {
+                var $this = $(this);
+                options = $.extend({}, options || {}, $this.data('countToOptions') || {});
+                $this.countTo(options);
+              }
+            });
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+        <style>
+            
+.coun {
+    font-family: Arial;
+    padding: 25px;
+    background-color: #f5f5f5;
+    color: #808080;
+        text-align: center;	
+        margin-bottom: 50px;
+  }
+  
+  /*-=-=-=-=-=-=-=-=-=-=-=- */
+  /* Column Grids */
+  /*-=-=-=-=-=-=-=-=-=-=-=- */
+  
+  .col_half { width: 49%; }
+  .col_third { width: 32%; }
+  .col_fourth { width: 23.5%; }
+  .col_fifth { width: 18.4%; }
+  .col_sixth { width: 15%; }
+  .col_three_fourth { width: 74.5%;}
+  .col_twothird{ width: 66%;}
+  .col_half,
+  .col_third,
+  .col_twothird,
+  .col_fourth,
+  .col_three_fourth,
+  .col_fifth{
+      position: relative;
+      display:inline;
+      display: inline-block;
+      float: left;
+      margin-right: 2%;
+      margin-bottom: 20px;
+  }
+  .end { margin-right: 0 !important; }
+  /* Column Grids End */
+  
+  .wrapper { width: 980px; margin: 30px auto; position: relative;}
+  .counter { background-color: #ffffff; padding: 20px 0; border-radius: 5px;}
+  .count-title { font-size: 40px; font-weight: normal;  margin-top: 10px; margin-bottom: 0; text-align: center; }
+  .count-text { font-size: 13px; font-weight: normal;  margin-top: 10px; margin-bottom: 0; text-align: center; }
+  .fa-2x { margin: 0 auto; float: none; display: table; color: #4ad1e5; }
+  
+        </style>
+
+
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap links -->
+    
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"> -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"> -->
+   <!-- the  nav buttone  script -->
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<!-- nav button script -->
+    <!-- style for nav bar -->
+   <link rel="stylesheet" href="styles.css">
+    <!-- end of nav -->
+    
+     <!-- css for header -->
+     <style>
+      <!-- *{padding: 0; margin: 0; box-sizing: border-box;} -->
+      <!-- body{height: 900px;} -->
+      header {
+        background: url('http://www.autodatz.com/wp-content/uploads/2017/05/Old-Car-Wallpapers-Hd-36-with-Old-Car-Wallpapers-Hd.jpg');
+        text-align: center;
+        width: 100%;
+        height: auto;
+        background-size: cover;
+        background-attachment: fixed;
+        position: relative;
+        overflow: hidden;
+        border-radius: 0 0 85% 85% / 30%;
+      }
+      header .overlay{
+        width: 100%;
+        height: 100%;
+        padding: 50px;
+        color: #FFF;
+        text-shadow: 1px 1px 1px #333;
+        background-image: linear-gradient( 135deg, #9f05ff69 10%, #fd5e086b 100%);
+        
+      }
+      
+      .h1 {
+        font-family: 'Dancing Script', cursive;
+        font-size: 60px;
+        margin-bottom: 30px;
+      }
+      
+       
+      .h3{
+        font-family: 'Open Sans', sans-serif;
+        margin-bottom: 50px;
+        font-size: 35px;
+      }
+      .h4{
+        font-family: 'Open Sans', sans-serif;
+        margin-bottom: 50px;
+        font-size: 25px;
+      }
+      
+      .but {
+        border: none;
+        outline: none;
+        padding: 10px 20px;
+        border-radius: 50px;
+        color: #333;
+        background: #fff;
+        margin-bottom: 50px;
+        box-shadow: 0 3px 20px 0 #0000003b;
+      }
+      .button:hover{
+        cursor: pointer;
+      }
+     </style>
+
+
+<!-- style of footer -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+  @import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
+
+* {
+font-family: Roboto;
+}
+.footer-distributed {
+background-color: #292c2f;
+box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+box-sizing: border-box;
+width: 100%;
+text-align: left;
+font: normal 16px sans-serif;
+padding: 45px 50px;
+}
+
+.footer-distributed .footer-left p {
+color: #8f9296;
+font-size: 14px;
+margin: 0;
+}
+/* Footer links */
+
+.footer-distributed p.footer-links {
+font-size: 18px;
+font-weight: bold;
+color: #ffffff;
+margin: 0 0 10px;
+padding: 0;
+transition: ease .25s;
+}
+
+.footer-distributed p.footer-links a {
+display: inline-block;
+line-height: 1.8;
+text-decoration: none;
+color: inherit;
+transition: ease .25s;
+}
+
+.footer-distributed .footer-links a:before {
+content: "·";
+font-size: 20px;
+left: 0;
+color: #fff;
+display: inline-block;
+padding-right: 5px;
+}
+
+.footer-distributed .footer-links .link-1:before {
+content: none;
+}
+
+.footer-distributed .footer-right {
+float: right;
+margin-top: 6px;
+max-width: 180px;
+}
+
+.footer-distributed .footer-right a {
+display: inline-block;
+width: 35px;
+height: 35px;
+background-color: #33383b;
+border-radius: 2px;
+font-size: 20px;
+color: #ffffff;
+text-align: center;
+line-height: 35px;
+margin-left: 3px;
+transition:all .25s;
+}
+
+.footer-distributed .footer-right a:hover{transform:scale(1.1); -webkit-transform:scale(1.1);}
+
+.footer-distributed p.footer-links a:hover{text-decoration:underline;}
+
+/* Media Queries */
+
+@media (max-width: 600px) {
+.footer-distributed .footer-left, .footer-distributed .footer-right {
+  text-align: center;
+}
+.footer-distributed .footer-right {
+  float: none;
+  margin: 0 auto 20px;
+}
+.footer-distributed .footer-left p.footer-links {
+  line-height: 1.8;
+}
+}
+</style>
+<!-- end of footer -->
+
+  <body>
+    <!-- nav -->
+    <nav>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <label class="logo">Startup</label>
+      <ul>
+        <li><a class="active" href="#">Home</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Campus Ambassador</a></li>
+        <li><a href="#">Enrolll Now</a></li>
+      </ul>
+    </nav>
+    <!-- end nav -->
+
+    
+<!-- header start -->
+   <header>
+    <div class="overlay">
+<h2 class="h1">Tech Beta</h2>
+<h2 class="h3">Internship Program</h2>
+<h4 class="h4" style="color:#ec407a;">The ideal intern is committed, creative, organized, ambitious, independent, and able to crack a smile, whether meeting a celebrity or folding socks.</h4>
+    <br>
+    <button class="but" style="background-color: #dd4b39;">Enroll-Now</button>
+        </div>
+</header>
+<!-- header end -->
+
+
+
+
+<!-- this is page -->
+<article class="col-md-12">
+  <!-- Modern - Bootstrap Cards -->
+  
+      <!-- <h2>Modern - Bootstrap 4 Cards</h2> </header> -->
+  <!-- BLOG CARDS -->
+ 
+  <!-- PLAIN CARDS -->
+  <h3>❍❍❍</h3>
+  <div class="cards-2 section-gray">
+      <div class="container">
+          <div class="row">
+              <div class="col-md-4">
+                  <div class="card card-blog">
+                      <div class="card-image">
+                          <a href="#"> <img class="img img-raised" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRSGcVpHP4Pz6yVY9CaKWIjEbuFiSicvAXM1Q&usqp=CAU"> </a>
+                          <div class="ripple-cont"></div>
+                      </div>
+                      <div class="table">
+                          <h6 class="category text-info">learn</h6>
+                          <h4 class="card-caption">
+                                  <a href="#">Second years, pre final & final years engineering graduates.</a>
+                              </h4>
+                          <p class="card-description"> It is an Project based learning to understand the practicality of theoretical concepts to the students. </p>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-4">
+                  <div class="card card-blog">
+                      <div class="card-image">
+                          <a href="#"> <img class="img img-raised" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRSGcVpHP4Pz6yVY9CaKWIjEbuFiSicvAXM1Q&usqp=CAU"> </a>
+                      </div>
+                      <div class="table">
+                          <h6 class="category text-danger">Practice</h6>
+                          <h4 class="card-caption">
+                                  <a href="#">4-6 hours a day for 8 weeks depending on the internship.</a>
+                              </h4>
+                          <p class="card-description"> Practice through problem solving and project building can make a student an expert in his/her field of interest. </p>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-4">
+                  <div class="card card-blog">
+                      <div class="card-image">
+                          <a href="#"> <img class="img img-raised" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRSGcVpHP4Pz6yVY9CaKWIjEbuFiSicvAXM1Q&usqp=CAU"> </a>
+                      </div>
+                      <div class="table">
+                          <h6 class="category text-success">Intern</h6>
+                          <h4 class="card-caption">
+                                  <a href="#">Work from home industry internship.</a>
+                              </h4>
+                          <p class="card-description"> Get a chance to work in the industry relevant environment with the industry expert mentorship. </p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <!-- BACKGROUND CARDS -->
+  <h3>☆☆</h3>
+  <div class="cards-3 section-gray">
+      <div class="container">
+          <div class="row">
+              <div class="col-md-6">
+                  <div class="card card-background" style="background-image: url('http://adamthemes.com/demo/code/cards/images/blog07.jpeg')">
+                      <div class="table">
+                          <h6 class="category text-info">Techbeta</h6>
+                          <!-- <a href="#"> -->
+                              <h3 class="card-caption">Internship Fees and Benefits</h3> </a>
+                          <p class="card-description"> The cost for this industry professional supervised internship is
+                            INR 12000 3000/-<br/><br/><strong style="font-size: 25px;"> you will get from this Internship:</strong><br/>
+                            <br/>
+                            Experience Letter, internship report, strong technical skills, strong resume, reference letters for companies,real-world experience to placement drives and many more.</p>
+                          <!-- <a href="#" class="btn btn-white btn-simple"> <i class="fa fa-align-left"></i> Read Article </a> -->
+                          <!-- <a href="#pablo" class="btn btn-warning btn-round"> <i class="fa fa-cogs"></i> Our Project -->
+                              <!-- <div class="ripple-container"></div> -->
+                          <!-- </a> -->
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-6">
+                  <div class="card card-background" style="background-image: url('http://adamthemes.com/demo/code/cards/images/blog07.jpeg')">
+                      <div class="table">
+                          <h6 class="category text-info">Techbeta</h6>
+                          <h3 class="card-caption">Campus Ambassador Program
+                          </h3>
+                          <p class="card-description"> Are you highly energetic and ambitious, be it a fest, event or any college activity on the campus? We are looking for you! Be a part of VIBEXO, represent us on your campus and enjoy a whole host of perks and incentives.</p>
+                          <a href="#" class="btn btn-danger btn-round"> <i class="fa fa-align-left"></i>Campus-Ambassador </a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <!-- PROFILE CARDS 3 -->
+  <h3>Profile Cards &#9734;</h3>
+  <div class="cards-7 section-gray">
+      <div class="container">
+          <div class="row">
+              <div class="col-md-4">
+                  <div class="card card-profile">
+                      <div class="card-image">
+                          <a href="#"> <img class="img" src="kittu.png"> </a>
+                      </div>
+                      <div class="table">
+                          <h4 class="card-caption">jubre kiran</h4>
+                          <h6 class="category text-gray">CEO / Co-Founder</h6>
+                          <div class="ftr"> <a href="#" class="btn btn-just-icon btn-twitter btn-round"><i class="fa fa-twitter"></i></a> <a href="#" class="btn btn-just-icon btn-facebook btn-round"><i class="fa fa-facebook-square"></i></a> <a href="#" class="btn btn-just-icon btn-google btn-round"><i class="fa fa-google"></i></a> </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-4">
+                  <div class="card card-profile">
+                      <div class="card-image">
+                          <a href="#"> <img class="img" src="kittu.png"> </a>
+                      </div>
+                      <div class="table">
+                          <h4 class="card-caption">jubre kiran </h4>
+                          <h6 class="category text-gray">Graphic Designer</h6>
+                          <div class="ftr"> <a href="#" class="btn btn-just-icon btn-twitter btn-round"><i class="fa fa-twitter"></i></a> <a href="#" class="btn btn-just-icon btn-facebook btn-round"><i class="fa fa-facebook-square"></i></a> <a href="#" class="btn btn-just-icon btn-google btn-round"><i class="fa fa-pinterest"></i></a> </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-4">
+                  <div class="card card-profile">
+                      <div class="card-image">
+                          <a href="#"> <img class="img" src="kittu.png"> </a>
+                      </div>
+                      <div class="table">
+                          <h4 class="card-caption">jubre kiran</h4>
+                          <h6 class="category text-gray">Front End Developer</h6>
+                          <div class="ftr"> <a href="#" class="btn btn-just-icon btn-twitter btn-round"><i class="fa fa-twitter"></i></a> <a href="#" class="btn btn-just-icon btn-facebook btn-round"><i class="fa fa-facebook-square"></i></a> <a href="#" class="btn btn-just-icon btn-google btn-round"><i class="fa fa-google"></i></a> </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  
+ 
+  <!-- TESTIMONIAL CARDS -->
+  <h3>students review☆</h3>
+  <div class="cards-4 section-gray">
+      <div class="container">
+          <div class="row">
+              <div class="col-md-4">
+                  <div class="card card-testimonial">
+                      <div class="icon"> <i class="fa fa-quote-right"></i> </div>
+                      <div class="table">
+                          <h5 class="card-description">
+                            Being Intern at Techbeta, I could explore various technologies. Its one of the best places to join if you want to improve your skills, real world experience and networking.                      </h5> </div>
+                      <div class="ftr">
+                          <h4 class="card-caption">jubre kiran✎</h4>
+                          <!-- <h6 class="category">@debbonamet</h6> -->
+                          <div class="card-avatar">
+                              <a href="#"> <img class="img" src="kittu.png" alt="blur img">  </a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-4">
+                  <div class="card card-testimonial">
+                      <div class="icon"> <i class="fa fa-quote-right"></i> </div>
+                      <div class="table">
+                          <h5 class="card-description">
+                            Being Intern at Vibexo, I could explore various technologies. Its one of the best places to join if you want to improve your skills, real world experience and networking.                      </h5> </div>
+                      <div class="ftr">
+                          <h4 class="card-caption">jubre kiran✎</h4>
+                          <!-- <h6 class="category">@marydunst</h6> -->
+                          <div class="card-avatar">
+                              <a href="#"> <img class="img" src="kittu.png"> </a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-4">
+                  <div class="card card-testimonial">
+                      <div class="icon"> <i class="fa fa-quote-right"></i> </div>
+                      <div class="table">
+                          <h5 class="card-description">
+                            Being Intern at Vibexo, I could explore various technologies. Its one of the best places to join if you want to improve your skills, real world experience and networking.                      </h5> </div>
+                      <div class="ftr">
+                          <h4 class="card-caption">jubre kiran✎</h4>
+                          <!-- <h6 class="category">@patrickwood</h6> -->
+                          <div class="card-avatar">
+                              <a href="#"> <img class="img" src="kittu.png"> </a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  
+</article>
+<!--end of page  -->
+
+
+
+<!-- start of footer -->
+<footer class="footer-distributed">
+
+  <div class="footer-right">
+
+    <a href="#"><i class="fa fa-facebook"></i></a>
+    <a href="#"><i class="fa fa-twitter"></i></a>
+    <a href="#"><i class="fa fa-linkedin"></i></a>
+    <a href="#"><i class="fa fa-github"></i></a>
+
+  </div>
+
+  <div class="footer-left">
+
+    <p class="footer-links">
+      <a class="link-1" href="#">Home</a>
+
+      <a href="#">Blog</a>
+
+      <!-- <a href="#">Pricing</a> -->
+
+      <a href="#">About</a>
+
+      <a href="#">Faq</a>
+
+      <a href="#">Contact</a>
+    </p>
+
+    <p>Tech beta &copy; 2015</p>
+  </div>
+
+</footer>
+<!-- end of footer -->
+    
+  
+   <!-- bootstrap links -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  </body>
+</html>
+ 
